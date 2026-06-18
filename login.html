@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - English Learning Platform</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- منو (Header) -->
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <h2>🌍 English Learn</h2>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#lessons">Lessons</a></li>
+                    <li><a href="index.html#podcasts">Podcasts</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" id="themeToggle" title="Switch Theme">
+                🌙
+            </button>
+        </div>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="login-container">
+            <div class="login-box">
+                <h1>Login</h1>
+                <p class="login-subtitle">Welcome back to English Learn</p>
+
+                <form class="login-form" onsubmit="handleLogin(event)">
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Enter your email" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="Enter your password" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Remember Me -->
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+
+                    <!-- Login Button -->
+                    <button type="submit" class="btn-primary">Login</button>
+                </form>
+
+                <!-- Links -->
+                <div class="form-links">
+                    <a href="#">Forgot Password?</a>
+                    <span>|</span>
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
+
+            <!-- Login Image -->
+            <div class="login-image">
+                <img src="https://via.placeholder.com/400x400?text=English+Learning" alt="Learning">
+                <h3>Learn Anytime, Anywhere</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 English Learning Platform. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
