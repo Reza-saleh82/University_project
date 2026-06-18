@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - English Learning Platform</title>
+    <title>ورود - پلتفرم آموزش زبان انگلیسی</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -22,15 +22,15 @@
 
             <nav class="nav-menu" id="navMenu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#lessons">Lessons</a></li>
-                    <li><a href="index.html#podcasts">Podcasts</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="login.html" class="active">Login</a></li>
+                    <li><a href="index.html">صفحه اصلی</a></li>
+                    <li><a href="index.html#lessons">درس‌ها</a></li>
+                    <li><a href="index.html#podcasts">پادکست‌ها</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li><a href="login.html" class="active">ورود</a></li>
                 </ul>
             </nav>
 
-            <button class="theme-toggle" id="themeToggle" title="Switch Theme">
+            <button class="theme-toggle" id="themeToggle" title="تعویض تم">
                 🌙
             </button>
         </div>
@@ -40,30 +40,30 @@
     <section class="login-section">
         <div class="login-container">
             <div class="login-box">
-                <h1>Login</h1>
-                <p class="login-subtitle">Welcome back to English Learn</p>
+                <h1>ورود</h1>
+                <p class="login-subtitle">به پلتفرم آموزش انگلیسی خوش آمدید</p>
 
                 <form class="login-form" onsubmit="handleLogin(event)">
                     <!-- Email Input -->
                     <div class="form-group">
-                        <label for="email">Email Address</label>
+                        <label for="email">آدرس ایمیل</label>
                         <input 
                             type="email" 
                             id="email" 
                             name="email" 
-                            placeholder="Enter your email" 
+                            placeholder="ایمیل خود را وارد کنید" 
                             required
                         >
                     </div>
 
                     <!-- Password Input -->
                     <div class="form-group">
-                        <label for="password">Password</label>
+                        <label for="password">رمز عبور</label>
                         <input 
                             type="password" 
                             id="password" 
                             name="password" 
-                            placeholder="Enter your password" 
+                            placeholder="رمز عبور خود را وارد کنید" 
                             required
                         >
                     </div>
@@ -71,25 +71,25 @@
                     <!-- Remember Me -->
                     <div class="form-group checkbox">
                         <input type="checkbox" id="remember" name="remember">
-                        <label for="remember">Remember me</label>
+                        <label for="remember">مرا به خاطر بسپار</label>
                     </div>
 
                     <!-- Login Button -->
-                    <button type="submit" class="btn-primary">Login</button>
+                    <button type="submit" class="btn-primary">ورود</button>
                 </form>
 
                 <!-- Links -->
                 <div class="form-links">
-                    <a href="#">Forgot Password?</a>
+                    <a href="#">رمز عبور خود را فراموش کردید؟</a>
                     <span>|</span>
-                    <a href="#">Sign Up</a>
+                    <a href="#">ثبت نام</a>
                 </div>
             </div>
 
             <!-- Login Image -->
             <div class="login-image">
-                <img src="https://via.placeholder.com/400x400?text=English+Learning" alt="Learning">
-                <h3>Learn Anytime, Anywhere</h3>
+                <img src="https://via.placeholder.com/400x400?text=English+Learning" alt="یادگیری">
+                <h3>هر جا، هر وقت یاد بگیرید</h3>
             </div>
         </div>
     </section>
@@ -97,11 +97,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 English Learning Platform. All rights reserved.</p>
+            <p>&copy; 2024 پلتفرم آموزش انگلیسی. تمامی حقوق محفوظ است.</p>
             <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
+                <a href="#">فیسبوک</a>
+                <a href="#">توییتر</a>
+                <a href="#">اینستاگرام</a>
             </div>
         </div>
     </footer>
