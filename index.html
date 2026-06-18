@@ -3,90 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University project</title>
-    <link rel="stylesheet" href="./style/index.css">
-  <link href="./bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
+    <title>English Learning Platform</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
 <body>
+    <!-- منو (Header) -->
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <h2>🌍 English Learn</h2>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#lessons">Lessons</a></li>
+                    <li><a href="#podcasts">Podcasts</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
 
-<div class="container">
-  <div class="">
-    
-<div class="container grid text-center cardBox">
-  <div class="g-col-4"><div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div></div>
-  <div class="g-col-4"><div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div></div>
-  <div class="g-col-4"><div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div></div>
-</div>
+            <button class="theme-toggle" id="themeToggle" title="Switch Theme">
+                🌙
+            </button>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Learn English Online</h1>
+            <p>Master English with our interactive lessons and podcasts</p>
+            <button class="btn-primary" onclick="document.getElementById('lessons').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+        </div>
+    </section>
 
+    <!-- بخش درس‌ها -->
+    <section id="lessons" class="lessons">
+        <div class="container">
+            <h2>Our Lessons</h2>
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <img src="https://via.placeholder.com/300x200?text=Grammar" alt="Grammar">
+                    <h3>Grammar Basics</h3>
+                    <p>Learn the fundamentals of English grammar with clear explanations and examples.</p>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
 
-  </div>
-</div>
+                <div class="lesson-card">
+                    <img src="https://via.placeholder.com/300x200?text=Vocabulary" alt="Vocabulary">
+                    <h3>Vocabulary Building</h3>
+                    <p>Expand your vocabulary with interactive exercises and flashcards.</p>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
 
-<div class="footer bg-body-tertiary">
- <h3>RezaSaleh</h3>
-</div>
+                <div class="lesson-card">
+                    <img src="https://via.placeholder.com/300x200?text=Speaking" alt="Speaking">
+                    <h3>Speaking Practice</h3>
+                    <p>Improve your pronunciation and speaking skills with native speakers.</p>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
 
+                <div class="lesson-card">
+                    <img src="https://via.placeholder.com/300x200?text=Listening" alt="Listening">
+                    <h3>Listening Skills</h3>
+                    <p>Develop your listening comprehension with authentic audio materials.</p>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="bootstrap-5.3.8-dist/js/bootstrap.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- بخش پادکست‌ها -->
+    <section id="podcasts" class="podcasts">
+        <div class="container">
+            <h2>Podcasts & Audio Files</h2>
+            <div class="podcast-grid">
+                <div class="podcast-card">
+                    <h3>Daily English Podcast</h3>
+                    <audio controls>
+                        <source src="https://via.placeholder.com/audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Listen daily to improve your comprehension</p>
+                    <button class="btn-secondary" onclick="alert('Download started!')">Download</button>
+                </div>
+
+                <div class="podcast-card">
+                    <h3>Business English</h3>
+                    <audio controls>
+                        <source src="https://via.placeholder.com/audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Learn professional English expressions</p>
+                    <button class="btn-secondary" onclick="alert('Download started!')">Download</button>
+                </div>
+
+                <div class="podcast-card">
+                    <h3>Story Time</h3>
+                    <audio controls>
+                        <source src="https://via.placeholder.com/audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Enjoy interesting stories in English</p>
+                    <button class="btn-secondary" onclick="alert('Download started!')">Download</button>
+                </div>
+            </div>
+
+            <!-- بخش آپلود فایل‌ها -->
+            <div class="upload-section">
+                <h3>Upload Your Audio Files</h3>
+                <div class="upload-box">
+                    <input type="file" id="fileUpload" accept=".mp3,.wav,.m4a" onchange="handleFileUpload(event)">
+                    <label for="fileUpload" class="upload-label">
+                        <span>📁 Click to upload or drag and drop</span>
+                        <p>Supported formats: MP3, WAV, M4A</p>
+                    </label>
+                    <div id="uploadStatus"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 English Learning Platform. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
