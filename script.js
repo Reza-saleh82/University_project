@@ -88,7 +88,7 @@ function handleLogin(event) {
     // بررسی ساده
     if (email && password) {
         // در یک برنامه واقعی، اطلاعات به سرور ارسال می‌شود
-        alert('ورود موفق! خوش آمدید ' + email);
+        alert('✓ ورود موفق! خوش آمدید ' + email);
         
         // ریست کردن فرم
         document.querySelector('.login-form').reset();
@@ -96,7 +96,7 @@ function handleLogin(event) {
         // ممکن است به صفحه اصلی برود
         // window.location.href = 'index.html';
     } else {
-        alert('لطفاً تمام فیلدها را پر کنید');
+        alert('⚠ لطفاً تمام فیلدها را پر کنید');
     }
 }
 
@@ -172,6 +172,75 @@ function initializeDragAndDrop() {
 document.addEventListener('DOMContentLoaded', initializeDragAndDrop);
 
 /* ============================================
+   Survey Handler (نظرسنجی)
+   ============================================ */
+
+function handleSurvey(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('surveyName').value.trim();
+    const email = document.getElementById('surveyEmail').value.trim();
+    const feedback = document.getElementById('surveyFeedback').value.trim();
+    const surveyStatus = document.getElementById('surveyStatus');
+    
+    // بررسی فیلدها
+    if (!name) {
+        surveyStatus.textContent = '⚠ لطفاً نام کاربری را وارد کنید';
+        surveyStatus.style.color = '#dc3545';
+        return;
+    }
+    
+    if (!email) {
+        surveyStatus.textContent = '⚠ لطفاً ایمیل را وارد کنید';
+        surveyStatus.style.color = '#dc3545';
+        return;
+    }
+    
+    if (!feedback) {
+        surveyStatus.textContent = '⚠ لطفاً نظرات خود را بنویسید';
+        surveyStatus.style.color = '#dc3545';
+        return;
+    }
+    
+    // بررسی ایمیل
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        surveyStatus.textContent = '⚠ لطفاً ایمیل معتبر وارد کنید';
+        surveyStatus.style.color = '#dc3545';
+        return;
+    }
+    
+    // بررسی طول متن نظر
+    if (feedback.length < 10) {
+        surveyStatus.textContent = '⚠ لطفاً نظرات بیشتری بنویسید (حداقل 10 کاراکتر)';
+        surveyStatus.style.color = '#dc3545';
+        return;
+    }
+    
+    // ارسال موفق
+    surveyStatus.innerHTML = '✓ سپاس! نظرات شما با موفقیت ارسال شد. <br>ما بیشتر شنیدن از شما خوشحال خواهیم بود';
+    surveyStatus.style.color = '#28a745';
+    surveyStatus.style.fontWeight = '600';
+    
+    // ریست کردن فرم
+    document.querySelector('.survey-form').reset();
+    
+    // پاک کردن پیام بعد از 5 ثانیه
+    setTimeout(function() {
+        surveyStatus.textContent = '';
+    }, 5000);
+    
+    // ممکن است اطلاعات به سرور ارسال شود
+    // در این مثال فقط فرانت‌اند است
+    console.log('نظرسنجی ارسال شد:', {
+        name: name,
+        email: email,
+        feedback: feedback,
+        date: new Date().toLocaleDateString('fa-IR')
+    });
+}
+
+/* ============================================
    Active Link Updater (برای منو)
    ============================================ */
 
@@ -220,11 +289,22 @@ window.addEventListener('resize', function() {
 });
 
 /* ============================================
+   Initialize Survey on Page Load
+   ============================================ */
+
+document.addEventListener('DOMContentLoaded', function() {
+    const surveyForm = document.querySelector('.survey-form');
+    if (surveyForm) {
+        surveyForm.addEventListener('submit', handleSurvey);
+    }
+});
+
+/* ============================================
    Initialization on Page Load
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('صفحه بارگذاری شد');
+    console.log('✓ صفحه بارگذاری شد');
     
     // اگر استفاده‌کننده ترجیح شب را داشته باشد
     const savedTheme = localStorage.getItem('theme');
