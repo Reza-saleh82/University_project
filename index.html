@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Learning Platform</title>
+    <title>پلتفرم آموزش زبان انگلیسی</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -22,15 +22,15 @@
 
             <nav class="nav-menu" id="navMenu">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#lessons">Lessons</a></li>
-                    <li><a href="#podcasts">Podcasts</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="index.html" class="active">صفحه اصلی</a></li>
+                    <li><a href="#lessons">درس‌ها</a></li>
+                    <li><a href="#podcasts">پادکست‌ها</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li><a href="login.html">ورود</a></li>
                 </ul>
             </nav>
 
-            <button class="theme-toggle" id="themeToggle" title="Switch Theme">
+            <button class="theme-toggle" id="themeToggle" title="تعویض تم">
                 🌙
             </button>
         </div>
@@ -39,43 +39,69 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Learn English Online</h1>
-            <p>Master English with our interactive lessons and podcasts</p>
-            <button class="btn-primary" onclick="document.getElementById('lessons').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+            <h1>یاد بگیرید انگلیسی را آنلاین</h1>
+            <p>زبان انگلیسی را با درس‌های تعاملی و پادکست‌های ما بیاموزید</p>
+            <button class="btn-primary" onclick="document.getElementById('lessons').scrollIntoView({behavior: 'smooth'})">شروع کنید</button>
         </div>
     </section>
 
     <!-- بخش درس‌ها -->
     <section id="lessons" class="lessons">
         <div class="container">
-            <h2>Our Lessons</h2>
+            <h2>درس‌های ما</h2>
             <div class="lessons-grid">
                 <div class="lesson-card">
-                    <img src="https://via.placeholder.com/300x200?text=Grammar" alt="Grammar">
-                    <h3>Grammar Basics</h3>
-                    <p>Learn the fundamentals of English grammar with clear explanations and examples.</p>
-                    <button class="btn-secondary">Learn More</button>
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white; font-size: 60px;">
+                        📚
+                    </div>
+                    <h3>مبانی دستور‌ زبان</h3>
+                    <p>مبانی دستور زبان انگلیسی را با توضیحات واضح و مثال‌های کاربردی بیاموزید.</p>
+                    <button class="btn-secondary">بیشتر بدانید</button>
                 </div>
 
                 <div class="lesson-card">
-                    <img src="https://via.placeholder.com/300x200?text=Vocabulary" alt="Vocabulary">
-                    <h3>Vocabulary Building</h3>
-                    <p>Expand your vocabulary with interactive exercises and flashcards.</p>
-                    <button class="btn-secondary">Learn More</button>
+                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white; font-size: 60px;">
+                        📖
+                    </div>
+                    <h3>ساخت واژگان</h3>
+                    <p>واژگان خود را با تمرین‌های تعاملی و کارت‌های فلش افزایش دهید.</p>
+                    <button class="btn-secondary">بیشتر بدانید</button>
                 </div>
 
                 <div class="lesson-card">
-                    <img src="https://via.placeholder.com/300x200?text=Speaking" alt="Speaking">
-                    <h3>Speaking Practice</h3>
-                    <p>Improve your pronunciation and speaking skills with native speakers.</p>
-                    <button class="btn-secondary">Learn More</button>
+                    <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white; font-size: 60px;">
+                        🎤
+                    </div>
+                    <h3>تمرین صحبت‌کردن</h3>
+                    <p>مهارت صحبت‌کردن و تلفظ خود را با بومی‌گویان بهبود دهید.</p>
+                    <button class="btn-secondary">بیشتر بدانید</button>
                 </div>
 
                 <div class="lesson-card">
-                    <img src="https://via.placeholder.com/300x200?text=Listening" alt="Listening">
-                    <h3>Listening Skills</h3>
-                    <p>Develop your listening comprehension with authentic audio materials.</p>
-                    <button class="btn-secondary">Learn More</button>
+                    <div style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white; font-size: 60px;">
+                        👂
+                    </div>
+                    <h3>مهارت‌های شنیداری</h3>
+                    <p>درک شنیداری خود را با مواد صوتی اصیل و معتبر توسعه دهید.</p>
+                    <button class="btn-secondary">بیشتر بدانید</button>
+                </div>
+
+                <div class="lesson-card">
+                    <div style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white; font-size: 60px;">
+                        ✍️
+                    </div>
+                    <h3>نوشتاری و تدوین</h3>
+                    <p>مهارت‌های نوشتاری انگلیسی را بیاموزید و تحریرات خود را بهبود دهید.</p>
+                    <button class="btn-secondary">بیشتر بدانید</button>
+                </div>
+
+                <div class="lesson-card">
+                    <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; color: white; font-size: 60px;">
+                        🗣️
+                    </div>
+                    <h3>مکالمه روزمره</h3>
+                    <p>عبارات و صحبت‌های روزمره انگلیسی را برای استفاده واقعی یاد بگیرید.</p>
+                    <button class="btn-secondary">بیشتر بدانید</button>
                 </div>
             </div>
         </div>
@@ -84,47 +110,47 @@
     <!-- بخش پادکست‌ها -->
     <section id="podcasts" class="podcasts">
         <div class="container">
-            <h2>Podcasts & Audio Files</h2>
+            <h2>پادکست‌ها و فایل‌های صوتی</h2>
             <div class="podcast-grid">
                 <div class="podcast-card">
-                    <h3>Daily English Podcast</h3>
+                    <h3>پادکست روزانه انگلیسی</h3>
                     <audio controls>
                         <source src="https://via.placeholder.com/audio.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
+                        مرورگر شما پشتیبانی از صوت ندارد.
                     </audio>
-                    <p>Listen daily to improve your comprehension</p>
-                    <button class="btn-secondary" onclick="alert('Download started!')">Download</button>
+                    <p>برای بهبود درک شنیداری هر روز گوش دهید</p>
+                    <button class="btn-secondary" onclick="alert('دانلود شروع شد!')">دانلود</button>
                 </div>
 
                 <div class="podcast-card">
-                    <h3>Business English</h3>
+                    <h3>انگلیسی تجاری</h3>
                     <audio controls>
                         <source src="https://via.placeholder.com/audio.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
+                        مرورگر شما پشتیبانی از صوت ندارد.
                     </audio>
-                    <p>Learn professional English expressions</p>
-                    <button class="btn-secondary" onclick="alert('Download started!')">Download</button>
+                    <p>عبارات و اصطلاحات حرفه‌ای انگلیسی را بیاموزید</p>
+                    <button class="btn-secondary" onclick="alert('دانلود شروع شد!')">دانلود</button>
                 </div>
 
                 <div class="podcast-card">
-                    <h3>Story Time</h3>
+                    <h3>داستان‌های انگلیسی</h3>
                     <audio controls>
                         <source src="https://via.placeholder.com/audio.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
+                        مرورگر شما پشتیبانی از صوت ندارد.
                     </audio>
-                    <p>Enjoy interesting stories in English</p>
-                    <button class="btn-secondary" onclick="alert('Download started!')">Download</button>
+                    <p>داستان‌های جالب انگلیسی را لذت ببرید</p>
+                    <button class="btn-secondary" onclick="alert('دانلود شروع شد!')">دانلود</button>
                 </div>
             </div>
 
             <!-- بخش آپلود فایل‌ها -->
             <div class="upload-section">
-                <h3>Upload Your Audio Files</h3>
+                <h3>آپلود فایل‌های صوتی خود</h3>
                 <div class="upload-box">
                     <input type="file" id="fileUpload" accept=".mp3,.wav,.m4a" onchange="handleFileUpload(event)">
                     <label for="fileUpload" class="upload-label">
-                        <span>📁 Click to upload or drag and drop</span>
-                        <p>Supported formats: MP3, WAV, M4A</p>
+                        <span>📁 برای آپلود کلیک کنید یا فایل را رها کنید</span>
+                        <p>فرمت‌های پشتیبانی شده: MP3, WAV, M4A</p>
                     </label>
                     <div id="uploadStatus"></div>
                 </div>
@@ -132,14 +158,63 @@
         </div>
     </section>
 
+    <!-- بخش نظرسنجی -->
+    <section class="survey-section">
+        <div class="container">
+            <h2>نظرات شما برای ما مهم است</h2>
+            <div class="survey-container">
+                <form class="survey-form" onsubmit="handleSurvey(event)">
+                    <!-- Name Input -->
+                    <div class="form-group">
+                        <label for="surveyName">نام کاربری</label>
+                        <input 
+                            type="text" 
+                            id="surveyName" 
+                            name="name" 
+                            placeholder="نام خود را وارد کنید" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="surveyEmail">آدرس ایمیل</label>
+                        <input 
+                            type="email" 
+                            id="surveyEmail" 
+                            name="email" 
+                            placeholder="ایمیل خود را وارد کنید" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Feedback Text -->
+                    <div class="form-group">
+                        <label for="surveyFeedback">نظرات و پیشنهادات</label>
+                        <textarea 
+                            id="surveyFeedback" 
+                            name="feedback" 
+                            placeholder="نظر خود را در مورد سایت یا خدمات بنویسید..." 
+                            required
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-primary">ارسال نظر</button>
+                </form>
+                <div id="surveyStatus" class="survey-status"></div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 English Learning Platform. All rights reserved.</p>
+            <p>&copy; 2024 پلتفرم آموزش انگلیسی. تمامی حقوق محفوظ است.</p>
             <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
+                <a href="#">فیسبوک</a>
+                <a href="#">توییتر</a>
+                <a href="#">اینستاگرام</a>
             </div>
         </div>
     </footer>
